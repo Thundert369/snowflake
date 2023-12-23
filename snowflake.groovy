@@ -29,6 +29,8 @@ pipeline {
                     script {
                         // Run the Python script with parameters and username/password authentication
                         sh "python3 --version"
+                        sh "pip install snowflake-connector-python"
+                        sh "pip install snowflake-snowpark-python"
                         sh "python3 ${GITHUB_SCRIPT_PATH} ${ACCOUNT} ${USER} ${PASSWORD} ${ROLE} ${params.WAREHOUSE_NAME} ${params.WAREHOUSE_SIZE}"
                     }
                 }
