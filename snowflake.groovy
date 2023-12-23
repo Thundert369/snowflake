@@ -8,7 +8,7 @@ pipeline {
 
     environment {
         GITHUB_REPO = 'https://github.com/Thundert369/snowflake.git'
-        GITHUB_SCRIPT_PATH = '/snowflake/test2.py'
+        GITHUB_SCRIPT_PATH = 'test2.py'
         ACCOUNT = 'gj35654.central-india.azure'
         CREDENTIAL_ID_USER = 'user-id'
         CREDENTIAL_ID_PASSWORD = 'password-id'
